@@ -6,6 +6,7 @@ export const profile = {
   phone: "256-656-7550",
   location: "Rockaway, NJ 07866",
   linkedin: "https://www.linkedin.com/in/kazi-hassan-phd-042140b3/",
+  siteUrl:  "https://kazihassan-portfolio.vercel.app",
   summary:
     "Technically skilled, innovative, and organized, with a strong ability to identify client problems. Holds four patents for developing analyzers to detect carcinogenic compounds, ensuring compliance with US EPA regulations for clean drinking water. Eager to advance a career focused on chemical, environmental, and water quality solutions through innovation.",
 };

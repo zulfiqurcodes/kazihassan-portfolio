@@ -1,5 +1,6 @@
 import { profile } from "@/data/resume";
 
+
 export default function ContactPage() {
   return (
     <section className="bg-gray-50">
@@ -64,6 +65,23 @@ export default function ContactPage() {
                     className="text-navy-700 font-semibold hover:text-gold-600"
                   >
                     linkedin.com/in/kazi-hassan-phd-042140b3
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="bg-navy-800 text-gold-400 w-12 h-12 rounded-full flex items-center justify-center text-xl flex-shrink-0">
+                  🌐
+                </div>
+                <div>
+                  <p className="text-sm text-gray-500 font-medium">Portfolio Website</p>
+                  <a
+                    href={profile.siteUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-navy-700 font-semibold hover:text-gold-600"
+                  >
+                    {profile.siteUrl.replace("https://", "")}
                   </a>
                 </div>
               </div>
