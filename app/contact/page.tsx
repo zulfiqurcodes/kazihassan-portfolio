@@ -63,7 +63,7 @@ export default function ContactPage() {
                     rel="noopener noreferrer"
                     className="text-navy-700 font-semibold hover:text-gold-600"
                   >
-                    linkedin.com/in/kazihassan
+                    linkedin.com/in/kazi-hassan-phd-042140b3
                   </a>
                 </div>
               </div>
