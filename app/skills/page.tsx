@@ -1,4 +1,4 @@
-import { skills } from "@/data/resume";
+import { skills, certifications } from "@/data/resume";
 
 export default function SkillsPage() {
   return (
@@ -49,6 +49,28 @@ export default function SkillsPage() {
                 {tool}
               </span>
             ))}
+          </div>
+        </div>
+
+        {/* Certifications & Training */}
+        <div className="mt-12">
+          <h2 className="text-xl font-bold text-navy-700 mb-2">Certifications &amp; Training</h2>
+          <div className="section-divider"></div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+            {certifications.map((cert) => {
+              const badgeColor =
+                cert.category === "Safety & Compliance" ? "bg-red-100 text-red-700 border-red-200" :
+                cert.category === "Technical"            ? "bg-blue-100 text-blue-700 border-blue-200" :
+                cert.category === "Software"             ? "bg-purple-100 text-purple-700 border-purple-200" :
+                                                           "bg-green-100 text-green-700 border-green-200";
+              return (
+                <div key={cert.name} className={`border rounded-lg p-4 ${badgeColor}`}>
+                  <p className="font-semibold text-sm leading-snug mb-1">{cert.name}</p>
+                  <p className="text-xs opacity-75">{cert.provider}</p>
+                  <p className="text-xs opacity-60 mt-1">{cert.date} &middot; {cert.expiry}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

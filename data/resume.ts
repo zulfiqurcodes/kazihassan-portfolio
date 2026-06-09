@@ -198,6 +198,80 @@ export const skills: Skill[] = [
   },
 ];
 
+export type Certification = {
+  name: string;
+  provider: string;
+  date: string;
+  expiry: "Non-Expiring" | string;
+  category: "Safety & Compliance" | "Technical" | "Professional Development" | "Software";
+};
+
+export const certifications: Certification[] = [
+  {
+    name: "OSHA General Industry — 10 Hour Training",
+    provider: "Parker Hannifin / Steve Cheatwood",
+    date: "Jan 2019",
+    expiry: "Non-Expiring",
+    category: "Safety & Compliance",
+  },
+  {
+    name: "Disinfection By-Products",
+    provider: "ADEM (Alabama Dept. of Environmental Management)",
+    date: "Oct 2005",
+    expiry: "Non-Expiring",
+    category: "Technical",
+  },
+  {
+    name: "Surface Water — Continuing Education",
+    provider: "ADEM (Alabama Dept. of Environmental Management)",
+    date: "Oct 2005",
+    expiry: "Non-Expiring",
+    category: "Technical",
+  },
+  {
+    name: "Design and Operation of Water Storage Tanks for Optimal Water Quality",
+    provider: "ADEM (Alabama Dept. of Environmental Management)",
+    date: "Feb 2006",
+    expiry: "Non-Expiring",
+    category: "Technical",
+  },
+  {
+    name: "Patents: Whether and When to File",
+    provider: "Parker Hannifin Legal / Chris Hunter",
+    date: "Feb 2016",
+    expiry: "Non-Expiring",
+    category: "Professional Development",
+  },
+  {
+    name: "Voice of the Customer",
+    provider: "Parker Hannifin",
+    date: "Apr 2009",
+    expiry: "Non-Expiring",
+    category: "Professional Development",
+  },
+  {
+    name: "Microsoft Project — Level 1",
+    provider: "New Horizons",
+    date: "Mar 2006",
+    expiry: "Non-Expiring",
+    category: "Software",
+  },
+  {
+    name: "Microsoft Project — Level 2",
+    provider: "New Horizons",
+    date: "Jun 2006",
+    expiry: "Non-Expiring",
+    category: "Software",
+  },
+  {
+    name: "HAZWOPER 40-Hour Training",
+    provider: "Certified",
+    date: "On Record",
+    expiry: "Non-Expiring",
+    category: "Safety & Compliance",
+  },
+];
+
 export type Education = {
   degree: string;
   field: string;
